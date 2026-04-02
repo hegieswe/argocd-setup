@@ -23,7 +23,7 @@ spec:
     - name: https
       port: 443
       targetPort: 8080
-      nodePort: 32025
+      nodePort: 31804
 EOF
 kubectl patch svc argocd-server -n argocd --patch-file patch-argocd-svc.yaml 2>/dev/null || true
 rm patch-argocd-svc.yaml
